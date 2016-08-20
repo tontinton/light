@@ -24,44 +24,44 @@ function setup() {
     lines.push(new Line(-width / 2 + 1, height / 2 - 1, -width / 2 + 1, -height / 2 + 1))
 
     // Triangle 1 - Top Left
-    lines.push(new Line(-width / 2 + 200, -height / 2 + 100, -width / 2 + 250, -height / 2 + 200))
-    lines.push(new Line(-width / 2 + 250, -height / 2 + 200, -width / 2 + 150, -height / 2 + 200))
-    lines.push(new Line(-width / 2 + 150, -height / 2 + 200, -width / 2 + 200, -height / 2 + 100))
+    lines.push(new Line(-width / 2 + 0.2 * width / 2, -height / 2 + 0.185 * height / 2, -width / 2 + 0.26 * width / 2, -height / 2 + 0.24 * height))
+    lines.push(new Line(-width / 2 + 0.26 * width / 2, -height / 2 + 0.24 * height, -width / 2 + 150, -height / 2 + 0.24 * height))
+    lines.push(new Line(-width / 2 + 150, -height / 2 + 0.24 * height, -width / 2 + 0.2 * width / 2, -height / 2 + 0.185 * height / 2))
 
     // Triangle 2 - Middle Down
-    lines.push(new Line(-width / 2 + 500, -height / 2 + 650, -width / 2 + 600, -height / 2 + 700))
-    lines.push(new Line(-width / 2 + 600, -height / 2 + 700, -width / 2 + 600, -height / 2 + 400))
-    lines.push(new Line(-width / 2 + 600, -height / 2 + 400, -width / 2 + 500, -height / 2 + 650))
+    lines.push(new Line(-width / 2 + 0.26 * width, -height / 2 + 0.6 * height, -width / 2 + 0.313 * width, -height / 2 + 0.648 * height))
+    lines.push(new Line(-width / 2 + 0.313 * width, -height / 2 + 0.648 * height, -width / 2 + 0.313 * width, -height / 2 + 0.37 * height))
+    lines.push(new Line(-width / 2 + 0.313 * width, -height / 2 + 0.37 * height, -width / 2 + 0.26 * width, -height / 2 + 0.6 * height))
 
     // Polygon 1
-    lines.push(new Line(350, 110, 400, 300))
-    lines.push(new Line(400, 300, 475, 320))
-    lines.push(new Line(475, 320, 500, -100))
-    lines.push(new Line(500, -100, 350, 110))
+    lines.push(new Line(350 / 960 * width / 2, 110 / 540 * height / 2, 400 / 960 * width / 2, 300 / 540 * height / 2))
+    lines.push(new Line(400 / 960 * width / 2, 300 / 540 * height / 2, 475 / 960 * width / 2, 320 / 540 * height / 2))
+    lines.push(new Line(475 / 960 * width / 2, 320 / 540 * height / 2, 500 / 960 * width / 2, -100 / 540 * height / 2))
+    lines.push(new Line(500 / 960 * width / 2, -100 / 540 * height / 2, 350 / 960 * width / 2, 110 / 540 * height / 2))
 
     // Polygon 2
-    lines.push(new Line(0, -300, 100, -400))
-    lines.push(new Line(100, -400, 150, -270))
-    lines.push(new Line(150, -270, 235, -340))
-    lines.push(new Line(235, -340, 260, -290))
-    lines.push(new Line(260, -290, 240, -200))
-    lines.push(new Line(240, -200, 170, -80))
-    lines.push(new Line(170, -80, 50, -100))
-    lines.push(new Line(50, -100, 0, -300))
+    lines.push(new Line(0, -300 / 540 * height / 2, 100 / 960 * width / 2, -400 / 540 * height / 2))
+    lines.push(new Line(100 / 960 * width / 2, -400 / 540 * height / 2, 150 / 960 * width / 2, -270 / 540 * height / 2))
+    lines.push(new Line(150 / 960 * width / 2, -270 / 540 * height / 2, 235 / 960 * width / 2, -340 / 540 * height / 2))
+    lines.push(new Line(235 / 960 * width / 2, -340 / 540 * height / 2, 260 / 960 * width / 2, -290 / 540 * height / 2))
+    lines.push(new Line(260 / 960 * width / 2, -290 / 540 * height / 2, 240 / 960 * width / 2, -200 / 540 * height / 2))
+    lines.push(new Line(240 / 960 * width / 2, -200 / 540 * height / 2, 170 / 960 * width / 2, -80 / 540 * height / 2))
+    lines.push(new Line(170 / 960 * width / 2, -80 / 540 * height / 2, 50 / 960 * width / 2, -100 / 540 * height / 2))
+    lines.push(new Line(50 / 960 * width / 2, -100 / 540 * height / 2, 0, -300 / 540 * height / 2))
 
     // Polygon 3
-    lines.push(new Line(-400, 350, -50, 300))
-    lines.push(new Line(-50, 300, -50, 400))
-    lines.push(new Line(-50, 400, -300, 400))
-    lines.push(new Line(-300, 400, -400, 350))
+    lines.push(new Line(-400 / 960 * width / 2, 350 / 540 * height / 2, -50 / 960 * width / 2, 300 / 540 * height / 2))
+    lines.push(new Line(-50 / 960 * width / 2, 300 / 540 * height / 2, -50 / 960 * width / 2, 400 / 540 * height / 2))
+    lines.push(new Line(-50 / 960 * width / 2, 400 / 540 * height / 2, -300 / 960 * width / 2, 400 / 540 * height / 2))
+    lines.push(new Line(-300 / 960 * width / 2,400 / 540 * height / 2, -400 / 960 * width / 2, 350 / 540 * height / 2))
 }
 
 /**
  * Handles screen resize
  */
 window.onresize = function() {
-    canvas.size(window.innerWidth, window.innerHeight)
-    translate(width / 2, height / 2)
+    lines = []
+    setup()
 }
 
 /**
